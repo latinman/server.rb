@@ -1,5 +1,5 @@
 require 'sinatra'
 
 get '/' do
-	puts "Hello World"	
+  send_file File.join(settings.public_folder, 'ernesto.txt')
 end
